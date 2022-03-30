@@ -1,0 +1,253 @@
+body{
+    background:#000000 !important;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+
+p{
+    font-size: 1.2rem;
+}
+@media (max-width: 767.98px) {
+    p{
+        font-size: 1rem !important;
+    }
+  }
+
+
+.logo_img{
+    width: 45px !important;
+}
+@media (max-width: 767.98px) {
+    .logo_img{
+        width: 30px !important;
+    }
+  }
+/* colors */
+/* 
+#fb7375
+#ef6fb9
+#d27752
+#fb7374
+#d0a59d
+#fe9aa1
+#90545c
+*/
+.color{
+    color: #fb7375;
+    color: #ef6fb9;
+    color: #d27752;
+    color: #fb7374;
+    color: #d0a59d;
+    color: #fe9aa1;
+    color: #90545c;
+}
+
+.icons_color:hover{
+    color: #d649b0;
+}
+/* navbar */
+
+  
+  .nav_color{
+    background: #ff756b;
+  }
+  .nav-link{
+    color: #ffffff !important;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .nav_icons{
+    font-size: 1.3rem !important; 
+  }
+  /* .nav_link:hover{
+    background: #4db6e2;
+  } */
+ 
+  .nav_link:hover{
+    color: #c2c1c7 !important;
+  }
+/*  */
+.background_section1{
+      background: url("../img/0cdb35ee-5cee-480c-bce8-1213169f97f3.jpg") center no-repeat;
+      background-size: 100%;
+      background-position: 50%;
+      min-height: 400px;
+      margin-top: 4rem !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .background_section1{
+        min-height: 200px;
+    }
+  }
+  @media (max-width: 500px) {
+    .background_section1{
+        min-height: 100px;
+        margin-top: 3.5rem !important;
+    }
+  }
+/* about */
+.background_about{
+    background: #ff51d0;
+}
+.discord_button{
+    padding: 10px 60px !important;
+    font-size: 1rem !important;
+    background: #d649b0 !important;
+    box-shadow: 0 10px 14px rgb(0 0 0 / 34%), inset 0 0 13px 3px hsl(0deg 0% 100% / 34%);
+    color: rgb(255, 255, 255) !important;
+    border-radius: 5px !important;
+  }
+.discord_button:hover{
+    background: #990070 !important;
+}
+
+
+/* faq */
+/* faq */
+.border_faq{
+    border: none !important;
+  }
+.card{
+    background: #d649b0 !important;
+    
+}
+.card-body{
+  background: #d649b0 !important;
+}
+.padding_faq{
+    padding: 20px;
+}
+
+
+/* footer */
+.background_footer{
+    background: rgb(171 58 141);
+}
+/* background_steps */
+.background_steps{
+    background: #d649b0;
+}
+/* s4 */
+.background_section4{
+    background: #ff51d0;
+}
+/* s5 */
+.background_section5{
+    background: #ff51d0;
+}
+/* team */
+.background_team{
+    background: #d649b0;
+}
+.background_faq{
+    background: #d649b0;
+}
+
+
+
+/* roadmap */
+.timeline {
+    position: relative;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #ffffff;
+  }
+
+  .timeline-element {
+    position: relative;
+    width: 50%;
+    padding: 1rem 0;
+    padding-right: 2.5rem;
+    text-align: right;
+  }
+
+  .timeline-element::before {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 1.35rem;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: #d649b0;
+  }
+
+  .timeline-element:nth-child(even)::before {
+    right: auto;
+    left: -8px;
+  }
+
+  .timeline-element:nth-child(even) {
+    margin-left: 50%;
+    padding-left: 2.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline::before {
+      left: 8px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element {
+      width: 100%;
+      text-align: left;
+      padding-left: 2.5rem;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element::before {
+      top: 1.25rem;
+      left: 1px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element:nth-child(even) {
+      margin-left: 0rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element {
+      width: 100%;
+      text-align: left;
+      padding-left: 2.5rem;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element:nth-child(even)::before {
+      left: 1px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .timeline-element::before {
+      top: 1.25rem;
+    }
+  }
+
+.background_roadmap{
+    background: #ff51d0;
+}
