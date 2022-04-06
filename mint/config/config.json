@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "0xb7695226bf13abb3494cd74961f3df1b0b2916d9",
+  "SCAN_LINK": "https://etherscan.io/address/0xb7695226bf13abb3494cd74961f3df1b0b2916d9",
+  "NETWORK": {
+    "NAME": "Ethereum Mainnet",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "Crypto Thots",
+  "SYMBOL": "CTT",
+  "MAX_SUPPLY": 2222,
+  "WEI_COST": 100000000000000000,
+  "DISPLAY_COST": 0.1,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/",
+  "SHOW_BACKGROUND": false,
+  "WHITELIST": false
+}
