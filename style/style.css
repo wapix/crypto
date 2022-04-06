@@ -1,15 +1,15 @@
 body{
-    background:#000000 !important;
+    background: #FA51A2 !important;
   }
 html {
     scroll-behavior: smooth;
   }
 
-p{
+.p_first{
     font-size: 1.2rem;
 }
 @media (max-width: 767.98px) {
-    p{
+  .p_first{
         font-size: 1rem !important;
     }
   }
@@ -23,6 +23,15 @@ p{
         width: 30px !important;
     }
   }
+
+
+.main_title{
+  font-size: 5rem;
+}
+.main_title2{
+  font-size: 3rem;
+  -webkit-text-stroke: 2px rgb(55, 41, 133);
+}
 /* colors */
 /* 
 #fb7375
@@ -42,7 +51,9 @@ p{
     color: #fe9aa1;
     color: #90545c;
 }
-
+.pink_color{
+  color: #FF6782;
+}
 .icons_color:hover{
     color: #d649b0;
 }
@@ -50,7 +61,7 @@ p{
 
   
   .nav_color{
-    background: #ff756b;
+    background: #ff6782;
   }
   .nav-link{
     color: #ffffff !important;
@@ -69,14 +80,11 @@ p{
   }
 /*  */
 .background_section1{
-      background: url("../img/0cdb35ee-5cee-480c-bce8-1213169f97f3.jpg") center no-repeat;
-      background-size: 100%;
-      background-position: 50%;
-      min-height: 400px;
-      margin-top: 4rem !important;
+      background: url('../img/backgrounds/1.jpg');
+      background-size: 100% 100%;
   }
 
-  @media (max-width: 767.98px) {
+  /* @media (max-width: 767.98px) {
     .background_section1{
         min-height: 200px;
     }
@@ -86,35 +94,49 @@ p{
         min-height: 100px;
         margin-top: 3.5rem !important;
     }
-  }
+  } */
 /* about */
 .background_about{
-    background: #ff51d0;
+    background: url('../img/backgrounds/2.jpg');
+    background-size: 100% 100%;
 }
 .discord_button{
-    padding: 10px 60px !important;
+    padding: 20px 60px !important;
     font-size: 1rem !important;
-    background: #d649b0 !important;
+    background: #ff6782 !important;
     box-shadow: 0 10px 14px rgb(0 0 0 / 34%), inset 0 0 13px 3px hsl(0deg 0% 100% / 34%);
     color: rgb(255, 255, 255) !important;
-    border-radius: 5px !important;
+    border-radius: 50px !important;
   }
 .discord_button:hover{
     background: #990070 !important;
+    transform: scale(1.1, 1.1) !important;
 }
 
-
+/* carousel */
+.background_carousel{
+  position: relative;
+  background: url('../img/backgrounds/3.jpg');
+  background-size: 100% 100%;
+}
 /* faq */
 /* faq */
 .border_faq{
     border: none !important;
   }
 .card{
-    background: #d649b0 !important;
+  background: #b327f400 !important;
+  box-shadow: none !important;
+}
+.card-header{
+    background: #b327f4 !important;
     
 }
 .card-body{
-  background: #d649b0 !important;
+  background: #bb39f9 !important;
+  
+  border-bottom-left-radius: 50px 50px !important;
+  border-bottom-right-radius: 50px 50px !important;
 }
 .padding_faq{
     padding: 20px;
@@ -123,7 +145,7 @@ p{
 
 /* footer */
 .background_footer{
-    background: rgb(171 58 141);
+    background: #ff6782;
 }
 /* background_steps */
 .background_steps{
@@ -138,15 +160,56 @@ p{
     background: #ff51d0;
 }
 /* team */
-.background_team{
+/* .background_team{
     background: #d649b0;
 }
 .background_faq{
     background: #d649b0;
+} */
+.background_roadmapFaq{
+  background: url("../img/backgrounds/6.jpg");
+  background-size: 100% 100%;
 }
-
-
-
+/* carousel */
+.carousel_buttom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+/* rarity */
+.hr{
+  width: 100%;
+  height: 2px;
+  background: white;
+  color: white;
+}
+.background_rarity{
+  background: url('../img/backgrounds/4.jpg');
+  background-size: 100% 100%;
+}
+.background_rarity2{
+  background: #b4bff5;
+  border-radius: 50px;
+  padding: 80px;
+}
+@media (max-width: 767.98px) {
+  .background_rarity2 {
+    font-size: 0.5rem;
+    margin: 10px;
+  }
+}
+.line_rarity{
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .line_rarity {
+    width: 50%;
+  }
+}
 /* roadmap */
 .timeline {
     position: relative;
@@ -161,7 +224,7 @@ p{
     left: 50%;
     top: 0;
     bottom: 0;
-    width: 2px;
+    width: 4px;
     margin-left: -1px;
     background-color: #ffffff;
   }
@@ -171,34 +234,50 @@ p{
     width: 50%;
     padding: 1rem 0;
     padding-right: 2.5rem;
-    text-align: right;
+    text-align: left;
   }
 
   .timeline-element::before {
     content: '';
     position: absolute;
-    right: -8px;
+    right: 113px;
     top: 1.35rem;
     display: inline-block;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid #ffffff;
-    background-color: #d649b0;
+    border: 4px solid #ffffff;
+    background-color: #d649b000;
   }
-
+.timeline-element::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 1.8rem;
+    display: inline-block;
+    width: 115px;
+    height: 4px;
+    background-color: white;
+}
   .timeline-element:nth-child(even)::before {
     right: auto;
-    left: -8px;
+    left: 113px;
   }
-
+.timeline-element:nth-child(even)::after {
+    right: auto;
+    left: 0;
+  }
   .timeline-element:nth-child(even) {
     margin-left: 50%;
     padding-left: 2.5rem;
     padding-right: 0;
-    text-align: left;
+    text-align: right;
   }
-
+@media (max-width: 767.98px) {
+  .timeline-element::after{
+    display: none;
+  }
+  }
   @media (max-width: 767.98px) {
     .timeline::before {
       left: 8px;
@@ -218,12 +297,14 @@ p{
     .timeline-element::before {
       top: 1.25rem;
       left: 1px;
+      background-color: white;
     }
   }
 
   @media (max-width: 767.98px) {
     .timeline-element:nth-child(even) {
       margin-left: 0rem;
+      text-align: left;
     }
   }
 
@@ -249,5 +330,28 @@ p{
   }
 
 .background_roadmap{
-    background: #ff51d0;
+    background: url('../img//backgrounds/5.jpg');
+    background-size: 100% 100%;
+}
+
+/* rectangle_animation */
+.rectangle_animation{
+  position: relative;
+  animation: myfirst 2s infinite;
+  animation-direction: alternate;
+  left: 10px;
+}
+
+@keyframes myfirst {
+  0%   {left: 10px;}
+  100% {left: 300px;}
+}
+.img_scale{
+  position: relative;
+  animation: myscale 2s infinite;
+  animation-direction: alternate;
+}
+@keyframes myscale {
+  0%   {transform: scale(0.8, 0.8)}
+  100% {transform: scale(1.1, 1.1)}
 }

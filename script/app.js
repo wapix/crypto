@@ -6,8 +6,8 @@ $('.owl-one').owlCarousel({
     autoplay:true,
     slideTransition: 'linear',
     responsiveClass:true,
-    autoplayTimeout: 2000,
-    smartSpeed: 2000,
+    autoplayTimeout: 1000,
+    smartSpeed: 1000,
     responsive:{
         0:{
             items:3
@@ -16,7 +16,7 @@ $('.owl-one').owlCarousel({
             items:3
         },
         1000:{
-            items:7
+            items:5.5
         }
     },
 })
@@ -43,3 +43,5 @@ $('.owl-two').owlCarousel({
         }
     }
 })
+
+// animation rectangle
